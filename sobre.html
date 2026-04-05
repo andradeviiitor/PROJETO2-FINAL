@@ -1,21 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <title>Sobre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre | Black Blade Barber</title>
+
+  <!-- Fontes do projeto -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
   <link rel="stylesheet" href="css/sobre.css">
 </head>
+
 <body>
 
+  <!-- NAVBAR: logo à esquerda, links à direita -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="servicos.html">Serviços</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="contato.html">Contato</a>
+    <a href="index.html" class="nav-logo">Black Blade</a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="sobre.html" class="ativo">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </div>
   </nav>
 
-  <h1>Sobre</h1>
-  <p>Esta página fala sobre a empresa.</p>
+  <!-- TÍTULO DA PÁGINA -->
+  <div class="topo">
+    <p class="subtitulo-topo">Quem somos</p>
+    <h1>Black Blade <span>Barber</span></h1>
+  </div>
+
+  <!-- SEÇÃO: NOSSA HISTÓRIA -->
+  <section class="secao">
+    <h2>Nossa História</h2>
+    <p>
+      A Black Blade Barber nasceu da paixão de um barbeiro que acreditava que
+      cada corte conta uma história. Fundada para unir tradição e modernidade,
+      nossa barbearia se tornou referência para quem valoriza estilo e cuidado.
+    </p>
+    <p>
+      Desde o primeiro dia, o compromisso foi claro: oferecer muito mais do que
+      um simples corte. Aqui cada cliente é recebido como um amigo.
+    </p>
+  </section>
+
+  <!-- LINHA SEPARADORA -->
+    <hr class="divisor"> 
+
+  <!-- SEÇÃO: NOSSOS VALORES -->
+  <section class="secao centralizado">
+    <h2>Nossos Valores</h2>
+    <p class="descricao-secao">O que nos guia todo dia</p>
+
+    <!-- CARDS DOS VALORES -->
+    <div class="cards">
+
+      <div class="card">
+        <p class="icone-card">💈</p>
+        <h3>Tradição</h3>
+        <p>Respeitamos a arte clássica da barbearia passada de geração em geração.</p>
+      </div>
+
+      <div class="card">
+        <p class="icone-card">⚡</p>
+        <h3>Precisão</h3>
+        <p>Cada detalhe importa. Trabalhamos com máxima atenção em cada serviço.</p>
+      </div>
+
+      <div class="card">
+        <p class="icone-card">🤝</p>
+        <h3>Respeito</h3>
+        <p>Todo cliente merece atenção exclusiva e atendimento de excelência.</p>
+      </div>
+
+      <div class="card">
+        <p class="icone-card">🔥</p>
+        <h3>Paixão</h3>
+        <p>Amamos o que fazemos e isso se reflete em cada trabalho entregue.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LINHA SEPARADORA -->
+  <hr class="divisor">
+
+  <!-- SEÇÃO: NOSSA EQUIPE -->
+  <section class="secao centralizado secao-escura">
+    <h2>Nossa Equipe</h2>
+    <p class="descricao-secao">Os mestres por trás da lâmina</p>
+
+    <!-- CARDS DA EQUIPE -->
+    <div class="cards">
+
+      <div class="card">
+<div class="avatar">
+  <img src="img/barbeiro1.png" alt="Marcos Blade">
+</div>
+        <h3>Marcos Blade</h3>
+        <p class="cargo">Fundador & Master</p>
+      </div>
+
+<div class="card">
+        <div class="avatar">
+          <img src="img/barbeiro2.png" alt="Lucas Silva">
+        </div>
+        <h3>Lucas Silva</h3>
+        <p class="cargo">Barbeiro Sênior</p>
+      </div>
+
+<div class="card">
+        <div class="avatar">
+          <img src="img/barbeiro3.png" alt="Bruno Costa">
+        </div>
+        <h3>Bruno Costa</h3>
+        <p class="cargo">Barbeiro Especialista</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LINHA SEPARADORA -->
+  <hr class="divisor">
+
+  <!-- SEÇÃO: NOSSO COMPROMISSO -->
+  <section class="secao centralizado">
+    <h2>Nosso Compromisso</h2>
+    <p>
+      Na Black Blade Barber acreditamos que o ambiente importa tanto quanto o serviço.
+      Por isso criamos um espaço onde você pode relaxar, conversar e sair renovado.
+    </p>
+
+    <!-- FRASE EM DESTAQUE -->
+    <p class="frase-destaque">
+      "Não cortamos apenas cabelo. Construímos confiança, estilo e identidade."
+    </p>
+
+    <p>
+      Utilizamos produtos de alta qualidade para garantir que você sempre
+      saia satisfeito e pronto para arrasar.
+    </p>
+  </section>
+
+  <!-- BOTÃO DE AGENDAMENTO -->
+  <div class="area-botao">
+    <p>Pronto para a transformação?</p>
+    <a href="contato.html" class="botao">Agendar agora</a>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; 2025 Black Blade Barber — Todos os direitos reservados</p>
+  </footer>
 
 </body>
 </html>
