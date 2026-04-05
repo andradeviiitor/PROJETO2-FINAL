@@ -1,0 +1,242 @@
+/* Reset */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'Josefin Sans' , sans-serif;
+    color: #F2EAD8;
+    background: #0D0B08;
+
+}
+
+/* Layout */
+
+.Container {
+
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.formulario form {
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+
+
+
+}
+
+.formulario h1 {
+
+    color:#C9A84C;
+    font-family: 'Playfair' , sans-serif;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+    font-size: 50px;
+
+}
+
+.formulario input {
+
+    max-width: 60%;
+    width: 30%;
+    background: #0D0B08;
+    border: 1px solid #C9A84C;
+    padding: 12px;
+    margin: 7px auto;
+    transition: 0.3s;
+    outline: none;
+    color: #F2EAD8;
+     border-radius: 2px;
+
+
+}
+
+.formulario button {
+
+    max-width: 60%;
+    width: 30%;
+    background: #C9A84C;
+    border: 1px solid #C9A84C;
+    padding: 12px;
+    font-size: 13px;
+    margin: 7px auto;
+    color:rgb(10, 10, 10);
+    transition: 0.2s;
+     border-radius: 2px;
+
+
+
+}
+
+.formulario select  {
+
+    max-width: 60%;
+    width: 30%;
+    background: #0D0B08;
+    border: 1px solid #C9A84C;
+    padding: 12px;
+    margin: 7px auto;
+    color:rgb(54, 54, 54);
+    color: #F2EAD8;
+    border-radius: 2px;
+
+
+
+}
+
+
+.formulario  {
+
+    width: 100%;
+    height: auto;
+    
+}
+
+:root {
+  --preto:       #0e0b07;
+  --dourado:     #c9a84c;
+  --dourado-claro: #e2c97e;
+  --branco:      #f5f0e8;
+  --cinza-texto: #9e8f78;
+  --borda:       rgba(201, 168, 76, 0.25);
+}
+
+
+nav {
+  background-color: var(--preto);
+  border-bottom: 1px solid var(--borda);
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+ 
+/* ================================
+   LINKS DO NAV — APARÊNCIA PADRÃO
+================================ */
+nav a {
+  text-decoration: none;
+  color: var(--cinza-texto);
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: color 0.3s;
+  position: relative;
+}
+ 
+nav a::after {
+  /* Conteúdo vazio — só cria a linha */
+  content: '';
+ 
+  /* Bloco em linha */
+  display: block;
+ 
+  /* Começa com largura zero (invisível) */
+  width: 0;
+ 
+  /* Altura da linha */
+  height: 2px;
+ 
+  /* Cor dourada */
+  background-color: var(--dourado);
+ 
+  /* Transição: cresce da esquerda */
+  transition: width 0.3s;
+ 
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+ 
+/* ================================
+   HOVER — MUDA A COR DO LINK
+================================ */
+nav a:hover {
+  color: var(--dourado);
+}
+ 
+/* ================================
+   HOVER — EXPANDE A LINHA EMBAIXO
+================================ */
+nav a:hover::after {
+  /* Linha ocupa toda a largura do link */
+  width: 100%;
+}
+ 
+/* ================================
+   LINK ATIVO (página atual)
+   Adicione a classe "ativo" no HTML:
+   <a href="servicos.html" class="ativo">Serviços</a>
+================================ */
+nav a.ativo {
+  color: var(--dourado-claro);
+  font-weight: 600;
+}
+ 
+nav a.ativo::after {
+  width: 100%;
+  background-color: var(--dourado-claro);
+}
+ 
+/* ================================
+   RESPONSIVO — CELULAR
+   (telas menores que 600px)
+================================ */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+ 
+    align-items: flex-start;
+
+    gap: 16px;
+ 
+    padding: 20px 24px;
+  }
+ 
+  nav a {
+    font-size: 15px;
+  }
+}
+
+/* animations */
+
+input:focus {
+
+     border-color: #E8C97A;
+}
+
+button:hover {
+
+    background: #F2EAD8;
+    color: #C9A84C;
+}
+
+
