@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <!-- saved from url=(0055)http://127.0.0.1:5500/VITOR%20PROJETO%202/servicos.html -->
-<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <title>Serviços</title>
   <link rel="stylesheet" href="./Serviços_files/servicos.css">
-<link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style></head>
+  <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+  <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+  <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+  <style lang="en" type="text/css" id="dark-mode-native-style"></style>
+  <style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+</head>
+
 <body>
 
   <nav>
-    <a href="http://127.0.0.1:5500/VITOR%20PROJETO%202/index.html">Home</a>
-    <a href="http://127.0.0.1:5500/VITOR%20PROJETO%202/servicos.html">Serviços</a>
-    <a href="http://127.0.0.1:5500/VITOR%20PROJETO%202/sobre.html">Sobre</a>
-    <a href="http://127.0.0.1:5500/VITOR%20PROJETO%202/contato.html">Contato</a>
+    <a href="index.html">Home</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
   </nav>
 
   <style>
@@ -19,15 +28,15 @@
        VARIÁVEIS DE COR E FONTE
     =========================== */
     :root {
-      --preto:       #0e0b07;
-      --marrom:      #1a1208;
-      --dourado:     #c9a84c;
+      --preto: #0e0b07;
+      --marrom: #1a1208;
+      --dourado: #c9a84c;
       --dourado-claro: #e2c97e;
-      --branco:      #f5f0e8;
+      --branco: #f5f0e8;
       --cinza-texto: #9e8f78;
-      --borda:       rgba(201, 168, 76, 0.25);
+      --borda: rgba(201, 168, 76, 0.25);
     }
- 
+
     /* ===========================
        RESET BÁSICO
     =========================== */
@@ -36,7 +45,7 @@
       padding: 0;
       box-sizing: border-box;
     }
- 
+
     body {
       background-color: var(--preto);
       color: var(--branco);
@@ -44,7 +53,7 @@
       font-weight: 300;
       letter-spacing: 0.04em;
     }
- 
+
     /* ===========================
        NAVEGAÇÃO (NAV)
     =========================== */
@@ -57,9 +66,10 @@
       position: sticky;
       top: 0;
       background-color: var(--preto);
+      color: #9e8f78;
       z-index: 100;
     }
- 
+
     .logo {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 600;
@@ -68,13 +78,13 @@
       color: var(--dourado);
       text-transform: uppercase;
     }
- 
+
     .nav-links {
       display: flex;
       gap: 40px;
       list-style: none;
     }
- 
+
     .nav-links a {
       text-decoration: none;
       color: var(--cinza-texto);
@@ -83,11 +93,11 @@
       text-transform: uppercase;
       transition: color 0.3s;
     }
- 
+
     .nav-links a:hover {
       color: var(--dourado);
     }
- 
+
     .btn-agendar-nav {
       background-color: var(--dourado);
       color: var(--preto);
@@ -102,11 +112,11 @@
       border-radius: 2px;
       transition: background-color 0.3s;
     }
- 
+
     .btn-agendar-nav:hover {
       background-color: var(--dourado-claro);
     }
- 
+
     /* ===========================
        CABEÇALHO DA SEÇÃO
     =========================== */
@@ -114,7 +124,7 @@
       text-align: center;
       padding: 80px 60px 50px;
     }
- 
+
     .label-topo {
       font-size: 11px;
       letter-spacing: 0.3em;
@@ -123,7 +133,7 @@
       display: block;
       margin-bottom: 16px;
     }
- 
+
     .titulo-secao {
       font-family: 'Playfair Display', serif;
       font-size: 52px;
@@ -131,12 +141,12 @@
       line-height: 1.1;
       color: var(--branco);
     }
- 
+
     .titulo-secao em {
       font-style: italic;
       color: var(--dourado);
     }
- 
+
     .subtitulo-secao {
       max-width: 500px;
       margin: 20px auto 0;
@@ -144,8 +154,8 @@
       color: var(--cinza-texto);
       line-height: 1.7;
     }
-   
- 
+
+
     /* ===========================
        GRADE DE SERVIÇOS
     =========================== */
@@ -157,12 +167,13 @@
       max-width: 1200px;
       margin: 0 auto;
     }
- 
+
     /* ===========================
        CARD DE SERVIÇO
     =========================== */
     .card {
-      flex: 1 1 220px;              /* cresce e encolhe; mínimo 220px */
+      flex: 1 1 220px;
+      /* cresce e encolhe; mínimo 220px */
       background-color: var(--marrom);
       border: 1px solid var(--borda);
       border-radius: 4px;
@@ -170,13 +181,13 @@
       position: relative;
       transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
     }
- 
+
     .card:hover {
       transform: translateY(-6px);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
       border-color: var(--dourado);
     }
- 
+
     /* Número do card */
     .card-numero {
       font-size: 64px;
@@ -186,14 +197,14 @@
       margin-bottom: 16px;
       letter-spacing: -0.02em;
     }
- 
+
     /* Ícone (emoji) */
     .card-icone {
       font-size: 28px;
       margin-bottom: 16px;
       display: block;
     }
- 
+
     /* Nome do serviço */
     .card-nome {
       font-family: 'Playfair Display', serif;
@@ -202,7 +213,7 @@
       color: var(--branco);
       margin-bottom: 12px;
     }
- 
+
     /* Descrição */
     .card-descricao {
       font-size: 14px;
@@ -210,7 +221,7 @@
       line-height: 1.7;
       margin-bottom: 24px;
     }
- 
+
     /* Preço */
     .card-preco {
       font-size: 11px;
@@ -220,12 +231,12 @@
       border-top: 1px solid var(--borda);
       padding-top: 16px;
     }
- 
-  
+
+
     .card:hover::before {
       opacity: 1;
     }
- 
+
     /* ===========================
        CARD EM DESTAQUE (combo)
     =========================== */
@@ -233,12 +244,12 @@
       background-color: #1f1708;
       border-color: rgba(201, 168, 76, 0.5);
     }
- 
+
     .card-destaque .card-nome {
       color: var(--dourado-claro);
     }
- 
-    
+
+
     .cta-titulo {
       font-family: 'Playfair Display', serif;
       text-align: center;
@@ -246,26 +257,26 @@
       font-weight: 700;
       margin-bottom: 12px;
     }
- 
+
     .cta-titulo em {
       font-style: italic;
       color: var(--dourado);
     }
- 
+
     .cta-subtitulo {
       text-align: center;
       color: var(--cinza-texto);
       font-size: 15px;
       margin-bottom: 32px;
     }
- 
+
     .grupo-botoes {
       display: flex;
       justify-content: center;
       gap: 16px;
       flex-wrap: wrap;
     }
- 
+
     /* Botão primário */
     .btn-primario {
       background-color: var(--dourado);
@@ -281,12 +292,12 @@
       border-radius: 2px;
       transition: background-color 0.3s, transform 0.2s;
     }
- 
+
     .btn-primario:hover {
       background-color: var(--dourado-claro);
       transform: translateY(-2px);
     }
- 
+
     /* Botão secundário (outline) */
     .btn-secundario {
       background-color: transparent;
@@ -302,53 +313,59 @@
       border-radius: 2px;
       transition: border-color 0.3s, color 0.3s, transform 0.2s;
     }
- 
+
     .btn-secundario:hover {
       border-color: var(--dourado);
       color: var(--dourado);
       transform: translateY(-2px);
     }
- 
+
 
     @media (max-width: 768px) {
       nav {
         padding: 18px 24px;
       }
- 
+
       .nav-links {
-        display: none;          /* esconde links no mobile */
+        display: none;
+        /* esconde links no mobile */
       }
- 
+
       .secao-cabecalho {
         padding: 50px 24px 30px;
       }
- 
+
       .titulo-secao {
         font-size: 36px;
       }
- 
+
       .grade-servicos {
         padding: 0 24px 60px;
       }
- 
+
       .secao-cta {
         padding: 40px 24px;
       }
- 
+
       footer {
         padding: 24px;
         flex-direction: column;
         text-align: center;
       }
     }
+
+    a {
+      text-decoration: none;
+      color: #9e8f78;
+    }
   </style>
 
 
- 
+
 
   <div class="secao-cabecalho">
     <span class="label-topo">O que oferecemos</span>
- 
+
     <h1 class="titulo-secao">
       Nossos <em>Serviços</em>
     </h1>
@@ -358,10 +375,10 @@
       do corte à finalização.
     </p>
   </div>
- 
- 
+
+
   <div class="grade-servicos">
- 
+
     <!-- CARD 01 -->
     <div class="card">
       <div class="card-numero">01</div>
@@ -373,7 +390,7 @@
       </p>
       <div class="card-preco">A partir de R$ 50</div>
     </div>
- 
+
     <!-- CARD 02 -->
     <div class="card">
       <div class="card-numero">02</div>
@@ -385,11 +402,11 @@
       </p>
       <div class="card-preco">A partir de R$ 40</div>
     </div>
- 
+
     <!-- CARD 03 — DESTAQUE -->
     <div class="card card-destaque">
       <div class="card-numero">03</div>
-        <span class="card-icone">💈</span>
+      <span class="card-icone">💈</span>
       <h2 class="card-nome">Combo Black Blade</h2>
       <p class="card-descricao">
         Corte + barba + lavagem + hidratação.
@@ -397,7 +414,7 @@
       </p>
       <div class="card-preco">A partir de R$ 90</div>
     </div>
- 
+
     <!-- CARD 04 -->
     <div class="card">
       <div class="card-numero">04</div>
@@ -409,7 +426,7 @@
       </p>
       <div class="card-preco">A partir de R$ 70</div>
     </div>
- 
+
     <!-- CARD 05 -->
     <div class="card">
       <div class="card-numero">05</div>
@@ -421,7 +438,7 @@
       </p>
       <div class="card-preco">A partir de R$ 20</div>
     </div>
- 
+
     <!-- CARD 06 -->
     <div class="card">
       <div class="card-numero">06</div>
@@ -433,60 +450,62 @@
       </p>
       <div class="card-preco">A partir de R$ 35</div>
     </div>
- 
+
   </div><!-- fim .grade-servicos -->
- 
- 
+
+
   <section class="secao-cta">
     <h2 class="cta-titulo">Pronto para o melhor <em>corte</em> da sua vida?</h2>
     <p class="cta-subtitulo">
       Chega de filas. Agende pelo site e chegue na hora certa.
     </p>
- 
+
     <div class="grupo-botoes">
       <button class="btn-primario">Agendar Horário →</button>
-      </div>
+    </div>
   </section>
- 
- 
 
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 
-</body></html>
+
+  <!-- Code injected by live-server -->
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
+
+</body>
+
+</html>
