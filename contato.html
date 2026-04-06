@@ -1,21 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Contato</title>
-  <link rel="stylesheet" href="css/contato.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Blade Barber | Agendamento </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
+    <div class="menu-principal">
+        
   <nav>
+
     <a href="index.html">Home</a>
-    <a href="servicos.html">Serviços</a>
+    <a href="servicos.html" class="ativo">Serviços</a>
     <a href="sobre.html">Sobre</a>
-    <a href="contato.html">Contato</a>
+    <a href="#" class="agendamento">Agendamento</a>
   </nav>
+</div>
 
-  <h1>Contato</h1>
-  <p>Entre em contato conosco através desta página.</p>
+    <div class="Container">
+       
+        <div class="formulario">
 
+            <h1>Agendamento</h1>
+
+            <form>
+              
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="number" name="numero" placeholder="Numero">
+            <select id="Tipo-de-corte">
+                <option value="">Tipo De Corte</option>
+                <option value="Corte classico">Corte classico</option>
+                <option value="Barba Completa">barba Completa</option>
+                <option value="Combo Black Blade">Combo Black Blade</option>
+                <option value="Sombrancelha">Sombrancelha</option>
+                <option value="Tratamento Capilar">Tratamento Capilar</option>
+                <option value="Relaxamento">Relaxamento</option>
+
+</select>
+
+            <input type="date" name="Agendamento" placeholder="Data do Corte">
+
+            <button type="submit">Agendar</button>
+
+
+            </form>
+        </div>
+    </div>
+    
 </body>
 </html>
